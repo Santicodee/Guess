@@ -1,0 +1,131 @@
+@font-face {
+  font-family: gaming;
+  src: url(Retro\ Gaming.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gaming;
+  background-color: gray;
+  height: 100vh;
+}
+.again,
+.check {
+  cursor: pointer;
+}
+.again:hover,
+.check:hover {
+  letter-spacing: 3px;
+  transition-duration: 0.5s;
+  transform: scale(1.02);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main {
+  min-height: 40em;
+  max-width: 50em;
+  border: solid;
+  padding: 1em;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: solid 5px pink;
+  padding-bottom: 2.5em;
+}
+.again {
+  border: solid;
+  padding: 1em;
+
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+.result div {
+  margin-top: -1.5em;
+  min-height: 2em;
+  min-width: 2em;
+  font-size: 5rem;
+  background-color: white;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.result div p {
+  font-size: 3rem;
+}
+.grid {
+  margin-top: 2em;
+}
+.grid-2 {
+  display: flex;
+  justify-content: space-around;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+input {
+  max-width: 6em;
+  border: solid 5px white;
+  background-color: gray;
+}
+input[type="number"] {
+  font-size: 2rem;
+  text-align: center;
+  font-family: gaming;
+}
+button {
+  font-family: gaming;
+  font-size: 2rem;
+}
+@media (max-width: 425px) {
+  .main {
+    width: 16em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+  .number {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    width: 4em;
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+  .right {
+    margin-left: 1em;
+  }
+  .para {
+    font-size: 1rem;
+    text-align: end;
+  }
+}
